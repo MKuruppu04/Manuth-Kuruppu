@@ -1,4 +1,9 @@
 import { ContactInfo, Project, SoftwareSkill, VolunteeringRole } from './types';
+import heroImg from './src/assets/images/bme_hero_workspace_1790301558874.jpg';
+import ivDropImg from './src/assets/images/iv_drop_monitor_1790301571073.jpg';
+import heartSoundImg from './src/assets/images/heart_sound_amplifier_1790301582517.jpg';
+import bloodFlowImg from './src/assets/images/blood_flow_detector_1790301606092.jpg';
+import clinostatImg from './src/assets/images/clinostat_3d_1790301593722.jpg';
 
 export const PERSONAL_INFO: ContactInfo = {
   name: 'Kuruppu K A M T',
@@ -14,7 +19,7 @@ export const PERSONAL_INFO: ContactInfo = {
   location: 'Colombo / Moratuwa, Sri Lanka',
 };
 
-export const HERO_IMAGE = '/src/assets/images/bme_hero_workspace_1790301558874.jpg';
+export const HERO_IMAGE = heroImg;
 
 export const PROJECTS: Project[] = [
   {
@@ -24,7 +29,7 @@ export const PROJECTS: Project[] = [
     category: 'Biomedical Devices',
     overview: 'An automated clinical hardware system designed to continuously monitor intravenous fluid administration rate, detect chamber occlusions, and wirelessly trigger nurse station alerts prior to air embolism hazards.',
     fullDescription: 'Intravenous infusion is one of the most routine yet critical clinical therapies. Irregular flow rates, needle occlusions, or depleted infusion bags can lead to phlebitis, fluid overload, or dangerous air embolisms. The Autonomous IV Drop Monitoring System clamps non-invasively onto standard drip chambers, utilizing custom infrared optical transceiver arrays to compute instantaneous drop rate (gtt/min) and total volume infused. The unit runs on an energy-efficient microcontroller architecture with threshold alerts, liquid crystal telemetry, and wireless telemetry.',
-    image: '/src/assets/images/iv_drop_monitor_1790301571073.jpg',
+    image: ivDropImg,
     keyFeatures: [
       'Non-invasive optical IR barrier sensing with ambient light rejection',
       'Real-time gtt/min calculation and flow rate anomaly detection',
@@ -50,7 +55,7 @@ export const PROJECTS: Project[] = [
     category: 'Analog & Sensors',
     overview: 'A clinical-grade phonocardiography unit featuring high-gain active analog filtration and a multi-headphone audio distribution network designed for bedside medical education and synchronous cardiac auscultation.',
     fullDescription: 'Auscultation is a cornerstone of cardiology, yet subtle heart murmurs, S3/S4 gallops, and regurgitant clicks are difficult to demonstrate to multiple medical students simultaneously. The Multi-Listener Heart Sound Amplifier couples a sensitive acoustic bell diaphragm with an ultra-low-noise preamplifier, tunable bandpass filtering (20 Hz - 2000 Hz) to isolate cardiac harmonics from respiratory noise, and an active audio distribution bus powering up to 4 synchronized listener channels without signal degradation.',
-    image: '/src/assets/images/heart_sound_amplifier_1790301582517.jpg',
+    image: heartSoundImg,
     keyFeatures: [
       'Ultra-low-noise acoustic sensor interface with high Common-Mode Rejection Ratio (CMRR)',
       'Multi-stage active analog bandpass filter tuned for primary S1, S2, S3, and murmur frequencies',
@@ -76,7 +81,7 @@ export const PROJECTS: Project[] = [
     category: 'Biomedical Devices',
     overview: 'An embedded diagnostic module utilizing optical reflectance and Doppler principles to measure peripheral vascular blood flow velocity, pulsatile indices, and tissue perfusion in real time.',
     fullDescription: 'Evaluating peripheral microcirculation and tissue perfusion is vital in trauma assessment, diabetic limb preservation, and vascular reconstructive surgery. This autonomous instrument combines dual-wavelength optical sensing with high-speed analog signal acquisition to isolate the AC pulsatile component of microvascular blood flow. Onboard digital filtering algorithmically calculates pulse transit dynamics, relative perfusion index, and automated flow stagnation alerts.',
-    image: '/src/assets/images/blood_flow_detector_1790301606092.jpg',
+    image: bloodFlowImg,
     keyFeatures: [
       'Dual-wavelength optical reflectance sensor array for differential absorption analysis',
       'High-dynamic-range analog front-end isolating weak microvascular pulsatile waveforms',
@@ -102,7 +107,7 @@ export const PROJECTS: Project[] = [
     category: 'Microgravity & Research',
     overview: 'A dual-axis continuous rotational clinostat engineered to average Earth’s gravity vector to near-zero, enabling microgravity simulation for biological cell cultures and plant gravitropism experiments.',
     fullDescription: 'Conducting gravitational biology experiments in low Earth orbit or aboard the ISS is prohibitively expensive. A 3D clinostat provides simulated functional weightlessness on the ground by rotating an inner sample chamber along two independent orthogonal axes with variable angular velocities. By continuously shifting the gravitational direction before the biological specimen can polarize its sedimentation or mechanosensitive ion channels, the net time-averaged gravity vector approaches zero (10^-2 g to 10^-3 g equivalent).',
-    image: '/src/assets/images/clinostat_3d_1790301593722.jpg',
+    image: clinostatImg,
     keyFeatures: [
       'Concentric orthogonal dual-gimbal rings with precision balanced rotational axes',
       'Microstepping motor drivers delivering jitter-free continuous motion at 1 - 10 RPM',
